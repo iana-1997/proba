@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>San Sushi</title>
+  <meta charset="utf-8">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/galerie.css" rel="stylesheet">
+  <link href="css/livrare.css" rel="stylesheet">
+  <link href="css/slide.css" rel="stylesheet">
+  <link rel="icon" href="img/resourses/icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/carusel.js"></script>
+</head>
+<!--------------------------------------------------------------------------->
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">  
+      <a class="navbar-brand" href="#">
+       <img src="img/resourses/Logo.png" alt="logo" style="width:120px;">
+      </a>
+     <ul class="navbar-nav">
+       <li class="nav-item">
+          <a class="nav-link" href="#section1">Acasa</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="#section2">Meniu</a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="#section3">Galerie</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section4">Livrare</a>
+        </li>
+      </ul>
+    </nav>
+  <!--------------------------------------------------------------------------->
+    <div id="section1" class="container-fluid " style="padding-top:10px;padding-bottom:10px">
+      <div id="myCarousel" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/slide/slide1.png" alt="Los Angeles" width="1000" height="1000">
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide/slide2.png" alt="Chicago" width="1000" height="1000">
+          </div>
+        </div>
+      </div>
+    </div>
+<!--------------------------------------------------------------------------->
+    <div id="section2" class="container-fluid" style="padding-top:60px;padding-bottom:10px">
+      <nav id="top_nav">
+        <div id="menu">
+          <button onclick="AddCollection(1)">DONBURI</button>
+          <button onclick="AddCollection(2)">RULOURI</button>
+          <button onclick="AddCollection(3)">SUSHI</button>
+          <button onclick="AddCollection(4)">DESERTURI</button>
+          <button onclick="AddCollection(5)">BAUTURI</button>
+        </div>
+      </nav>
+
+      <div id="toggler" onclick="openbox(true)">
+        <div class="nameToggler">Basket</div>
+        <input id="togglerInput" value="0" readonly>
+        <div id="togglerChild"><img src="img/resourses/Basket.png" style="width:50%"></div>
+        <div id="box"><a href="#section4" id="final">Finiseaza cumparaturile</a></div>  
+      </div>
+
+      <section id="cont"><!--Content from js--></section>
+    </div>
+<!--------------------------------------------------------------------------->
+    <div id="section3" class="container-fluid bg-body" style="padding-top:70px;padding-bottom:10px">
+      <h1>Galeria</h1>
+      <div class="row"> 
+        <div class="column">
+          <a target="_self" href="img/galeria/foto1.png"><img src="img/galeria/foto1.png" style="width:100%"></a>
+          <a target="_self" href="img/galeria/foto2.png"><img src="img/galeria/foto2.png" style="width:100%"></a>
+          <a target="_self" href="img/galeria/foto3.png"><img src="img/galeria/foto3.png" style="width:100%"></a>
+          <a target="_self" href="img/galeria/foto4.png"><img src="img/galeria/foto4.png" style="width:100%"></a>
+          <a target="_self" href="img/galeria/foto5.png"><img src="img/galeria/foto5.png" style="width:100%"></a>        
+        </div>
+        <div class="column">
+          <a target="_self" href="img/galeria/foto6.png"><img src="img/galeria/foto6.png" style="width:100%"></a>
+          <a target="_self" href="img/galeria/foto7.png"><img src="img/galeria/foto7.png" style="width:100%"></a>
+          <a target="_self" href="img/galeria/foto8.png"><img src="img/galeria/foto8.png" style="width:100%"></a>
+          <a target="_self" href="img/galeria/foto9.png"><img src="img/galeria/foto9.png" style="width:100%"></a>
+          <a target="_self" href="img/galeria/foto91.png"><img src="img/galeria/foto91.png" style="width:100%"></a>
+        </div> 
+        <div class="column">
+          <a target="_self" href="img/galeria/foto10.png"><img src="img/galeria/foto10.png" style="width:100%"></a>
+          <a target="_self" href="img/galeria/foto11.png"><img src="img/galeria/foto11.png" style="width:100%"></a>
+          <a target="_self" href="img/galeria/foto12.png"><img src="img/galeria/foto12.png" style="width:100%"></a>
+          <a target="_self" href="img/galeria/foto13.png"><img src="img/galeria/foto13.png" style="width:100%"></a>
+          <a target="_self" href="img/galeria/foto14.png"><img src="img/galeria/foto14.png" style="width:100%"></a>
+        </div>
+        <div class="column">
+          <a target="_self" href="img/galeria/foto15.png"><img src="img/galeria/foto15.png" style="width:100%"></a>
+          <a target="_self" href="img/galeria/foto16.png"><img src="img/galeria/foto16.png" style="width:100%"></a>
+          <a target="_self" href="img/galeria/foto17.png"><img src="img/galeria/foto17.png" style="width:100%"></a>
+          <a target="_self" href="img/galeria/foto18.png"><img src="img/galeria/foto18.png" style="width:100%"></a>
+        </div>
+      </div>
+    </div>
+<!--------------------------------------------------------------------------->
+    <div id="section4" class="container-fluid bg-danger" style="padding-top:70px;padding-bottom:70px">
+      <h1>Livrare</h1>
+       <section>
+        <article class="reg" style="position: center">
+           <div>
+             <div class="div1">Compania:</div>
+             <div class="div2">
+               <form action="/action_page.php" style="width: 50%">
+                 <select name="cars" class="custom-select mb-3">
+                   <option selected>Alege Compania</option>
+                   <option id="slavena">Slavena</option>
+                   <option id="fourchette">Fourchette</option>
+                   <option id="SanSushi">San_Sushi</option>
+                 </select>
+              </form>
+            </div>
+
+            <div class="div1">Numele destinatorului:</div>
+            <div class="div2">
+              <input type="text" id="name" placeholder="Nume" pattern = "[A-Z]+[A-Za-z]{5,}">
+              <input type="text" id="name" placeholder="Prenume" pattern = "[A-Z]+[A-Za-z]{5,}">
+            </div>
+                
+            <div class="div1">Adresa livrarii:</div>
+            <div class="div2"><input type="text" id="address" placeholder="Ex: Conev 34/12" pattern = "[A-Z]+[A-Za-z]{5,}"></div>
+
+            <div class="div1">Telefon mobil:</div>
+            <div class="div2">
+              <input type="text" name="text"  value="+373" disabled style="width: 50px">
+              <input type="int" id="phone" placeholder = "78385529" pattern = "\d[0-9]+[0-9]{,8}+[0-9]{8,}">
+            </div> 
+                
+            <div class="div1">Email:</div>
+            <div class="div2"><input type="email" id="email" placeholder = "Ex: name@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"></div>
+
+            <div class="div1">Metode de achitare:</div>
+            <div>
+              <a href="https://www.paypal.com/ru/home" target="_blank"><img src="img/resourses/paypa.png"></a>
+              <a href="https://www.mastercard.ru/ru-ru.html" target="_blank"><img src="img/resourses/mastercard.png"></a>
+              <a href="https://www.visa.com.ru/" target="_blank"><img src="img/resourses/visa.png"></a>
+            </div>
+          </div><br>
+          <button>Отправить</button>
+        </article>
+      </section>
+    </div>
+<!--------------------------------------------------------------------------->
+    <footer>
+      © 2020 Gheorghita Iana. MI41Z. Project.<br>
+      <div><a href="https://www.vk.com" target="_blank"><img src="img/resourses/vk.png"></a></div> 
+      <div><a href="https://www.facebook.com" target="_blank"><img src="img/resourses/facebook.png"></a></div> 
+      <div><a href="https://www.instagram.ru/" target="_blank"><img src="img/resourses/inst.png"></a></div> 
+    </footer>
+<!--------------------------------------------------------------------------->
+    <script type="text/javascript" src="js/product.js"></script>
+    <script type="text/javascript" src="js/javascript.js"></script>
+  </body>
+</html>
+  
+

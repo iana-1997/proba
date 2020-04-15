@@ -1,0 +1,90 @@
+.error { 
+    border:2px solid green; 
+    outline: 0;
+}
+
+.reg{
+    vertical-align: top;
+    background: black;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 400px;
+    width: 40%;
+    min-width: 400px;
+    height: 600px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.reg div {
+    margin-left: 5px;
+}
+
+.reg div img{
+	width: 100px;
+	display: inline-block;
+	margin-left: 50px;
+}
+
+.reg div img:hover{
+    border:2px solid green;
+}
+
+.reg button{
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px 30px 10px 30px;
+	font-weight: bold;
+	color: #1d1f20;
+    border: none;
+    border-radius: 5px;
+	background: whitesmoke;
+	outline: 0;
+}
+
+.reg button:hover{
+    background: #ffd700;
+}
+
+.reg button:active{
+    background: red;
+}
+.reg div div{
+    margin-top: 7px;
+}
+.reg div div input{
+    border-radius: 5px;
+    padding: 2px;
+    outline: none;
+}
+.reg div div input:hover{
+    border: 2px solid #ffd700;
+}
+.div1{
+    color: whitesmoke;
+    text-align: left;
+}
+.div2{
+    text-align: left;
+}
+h1{
+    margin:5px;
+    font-size:24px;
+    text-align:center;
+    color:#1d1f20;
+    font-family:segoe script, serif;
+    font-weight: bold;
+    padding-bottom:10px;
+    line-height:40px;
+}
+
+@media screen and (max-width: 800px){
+    .reg {
+       width: 70%;
+       margin-left: 40px;
+    }
+
+}

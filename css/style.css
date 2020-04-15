@@ -1,0 +1,335 @@
+#top_nav{
+   	top: 5px;
+   	position: center ;
+   	z-index: 0;
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 5px;
+	background: black;
+	opacity: 0.95;
+}
+
+#top_nav div[id="menu"]{
+	width: 100%;
+	text-align: center;
+}
+
+#top_nav div button{
+	width: 100px;
+	height: 50px;
+	font-weight: bold;
+	color: white;
+	border: none;
+	background: none;
+	outline: 0;
+}
+
+#top_nav div button:active{
+	color: black;
+}
+
+#top_nav div{
+	display: inline-block;
+}
+
+#cont{
+	padding-top: 40px;
+	height: 600px;
+	text-align: center;
+	margin: auto;
+}
+
+#toggler{
+	top: 150px;
+	left: 15px;
+	position: fixed;
+	width: 70px;
+	height: 50px;
+	text-align: center;
+}
+
+#togglerChild img{
+	margin-left: 2px;
+	width: 30px;
+	height: 50px;
+	border-radius: 100px
+
+}
+
+#togglerChild img:hover{
+	border:2px solid green;
+	background: yellow
+}
+#toggler input{
+	width: 100px;
+	color: white;
+	background: none;
+	border: none;
+	text-align: center;
+	font-size: 10pt;
+	font-weight: bold;
+	font-family: segoe script;
+}
+
+#toggler:active{
+	background: none;
+}
+#box{
+	width: 400px;
+	height: 200px;
+	top: 370px;
+	left: 40px;
+	border-radius: 50px 5px 50px 5px;
+	color: white;
+	background: black;
+	padding: 20px;
+	display: none;
+	opacity: 0.9;
+	font-family: segoe script;
+	overflow: scroll;
+}
+#box button{
+	width: 30px;
+	height: 30px;
+	border: none;
+	border-radius: 50%;
+	font-weight: bold;
+	font-size: 15pt;
+	color: black;
+	background: yellow;
+	outline: 0;
+}
+#final{
+	color: yellow;
+	font-size: 15pt;
+	padding-left: 30px;
+	padding-right: 30px;
+	border: 2px solid white;
+	border-radius: 5px;
+	font-family: segoe script;
+}
+#final:hover{
+	background: white;
+	color: red;
+}
+
+.content{
+	width: 230px;
+	height: 270px;
+	margin: 5px;
+	display: inline-block;
+	border-radius: 20px;
+	border: 2px solid black;
+	color: black;
+
+}
+
+.content figure{
+	margin: 5px;
+}
+.image{
+	height: 150px;
+	border-radius: 5px;
+}
+.image:hover ~ .bigimage{
+	display: block;	
+}
+.bigimage{
+	top: 40%;
+	left: 30%;
+	float: center;
+	position: fixed;
+	vertical-align: top;
+	display: none;
+}
+.bigimage img{
+	border-radius: 5px;
+	border: 2px solid #1d1f20;
+	height: 300px;
+}
+.bigimage:hover{
+	display: block;
+}
+.content figure figcaption{
+	width: 100%;
+	height: 30px;
+	font-size: 15pt;
+	font-weight: bold;
+	font-family: segoe script;
+	text-align: center;
+}
+.content figure div button[id="plusminus"]{
+	width: 40px;
+	height: 40px;
+	border: none;
+	border-radius: 50%;
+	font-weight: bold;
+	font-size: 15pt;
+	color: black;
+	background: yellow;
+	outline: 10;
+}
+
+.InBox{
+	padding: 5px;
+}
+.InBox:hover{
+	border-bottom: 6px solid red;
+}
+
+.description{
+	background: white;
+	border-radius: 5px;
+	border: 3px solid red;
+	color: black;
+	font-family: segoe script;
+}
+
+.count{
+	width: 20px;
+	height: 13px;
+	font-size: 15pt;
+	border: none;
+	border-radius: 2px;
+	background: none;
+	color: black;
+	margin: 8px;
+	outline: 0;
+	text-align: center;
+	font-weight: bold;
+}
+.count2{
+	vertical-align: top;
+	width: 20px;
+	height: 25px;
+	font-size: 10pt;
+	border: none;
+	border-radius: 5px;
+	background: green;
+	color: black;
+	margin-left: 19px;
+	margin-right: 5px; 
+	outline: 0;
+	text-align: center;
+	font-weight: bold;
+}
+.price{
+	width: 100%;
+	text-align: right;
+	color: red;
+	border: none;
+	background: none;
+	font-size: 20pt;
+	font-weight: bold;
+	font-family: segoe script;
+	display: block;
+	outline: 0;
+}
+.content figure div button[id="inbasket"]{
+	vertical-align: top;
+	margin-left: 10px;
+	width: 40px;
+	height: 40px;
+	border: none;
+	border-radius: 190%;
+	font-weight: bold;
+	font-size: 15pt;
+	color: #2B2726;
+	background: red;
+	outline: 0;
+}
+.content figure div button[id="inbasket"]:hover{
+	background: #ffd700; 
+}
+.nameToggler{
+	display: none;
+}
+
+footer{
+	padding-top: 30px;
+	text-align: center;
+	bottom: 0;
+	color: #e7e5e4;
+	letter-spacing: 2px;
+	font-family: Helvetica, sans-serif;
+	background: #1d1f20;
+	box-shadow: 0px 0px 5px black;  
+}
+footer div{
+	width: 32px;
+	display: inline-block;
+	margin: auto;
+}
+footer div img{
+	width: 100%;
+}
+
+@media screen and (max-width: 500px){
+	#top_nav{
+		width: 100%;
+	}
+	#top_nav div{
+		margin: 0px;
+		display: block;
+		width: 100%;
+	}
+	#top_nav div[id="menu"]{
+		width: 100%;
+	}
+	.content figure div:not(.bigimage){
+		display: inline-block;
+		width: 50%;
+	}
+	.content{
+		width: 95%;
+		height: 150px;
+		display: block;
+	}
+	.price{
+		text-align: center;
+	}
+	.image{
+		float: left;
+		width: 150px;
+	}
+	figcaption{
+		top: 0px;
+	}
+}
+
+@media screen and (max-width: 800px){
+	section{
+		width: 100%;
+		margin: 0px;
+	}
+	header h2{
+		font-size: 1em;
+		margin-left: 0px;
+	}
+	.bigimage:hover{
+		display: none;
+	}
+	.image:hover ~ .bigimage{
+		display: none;	
+	}
+	#top_nav{
+
+		background: black;
+		
+	}
+	#top_nav div button{
+		width: 100px;
+		height: 30px;
+		color: whitesmoke;
+	}
+	#cont{
+		padding: 0px;
+	} 
+	.content{
+		width: 180px;
+		height: 300px;
+		border-radius: 10px;
+	}
+
+}
