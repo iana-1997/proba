@@ -114,19 +114,19 @@ var productColl = [
     category: 4},
 
     {idprod: 13,
-    name: 'Coca Cola -30%',
+    name: 'Coca Cola',
     image: 'img/product/prod18.png',
     price: 40.90,
     category: 5},
 
     {idprod: 14,
-    name: 'Fanta -30%',
+    name: 'Fanta',
     image: 'img/product/prod19.png',
     price: 40.90,
     category: 5},
 
     {idprod: 15,
-    name: 'Sprite -30%',
+    name: 'Sprite',
     image: 'img/product/prod20.png',
     price: 40.90,
     category: 5},];
